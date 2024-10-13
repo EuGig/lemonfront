@@ -1,17 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import Nav from "./components/Nav.js";
 import Header from "./components/Header.js";
 import Main from "./components/Main.js";
 import Footer from "./components/Footer.js";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
       <>
-	  <Header />
-	  <Nav />
-	  <Main />
-	  <Footer />
+		<Router>
+			<Header />
+			<Main />
+			<Footer />
+		</Router>
 	</>
   );
 }

@@ -1,8 +1,9 @@
+import Nav from "./Nav.js";
+import React from "react";
+
 function Header() {
 	return (
-		<header>
-			<img src="icon_assets/Logo.svg" alt="logo"/>
-		</header>
+		<Nav />
 	)
 }
 

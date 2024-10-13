@@ -1,25 +1,28 @@
+import logo from "../icons_assets/Logo.svg";
+import React from "react";
+
 function Footer() {
 	return (
-		<footer style={{display: "flex"}}>
+		<footer className="footer">
+			<img src={logo} alt="logo"/>
 			<ul>
-				DoormatNavigation
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Menu</a></li>
-				<li><a href="">Reservations</a></li>
-				<li><a href="">Order Online</a></li>
-				<li><a href="">Login</a></li>
+				<li>Doormat Navigation</li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/notimp">Menu</a></li>
+				<li><a href="booking">Reservations</a></li>
+				<li><a href="/notimp">Login</a></li>
 			</ul>
 			<ul>
-				Contact
-				<li><a href="">Adres</a></li>
-				<li><a href="">Phone Number</a></li>
-				<li><a href="">Email</a></li>
+				<li>Contact</li>
+				<li>Adress</li>
+				<li>Phone Number</li>
+				<li>Email</li>
 			</ul>
 			<ul>
-				Social Media Links
-				<li><a href="">Instagram</a></li>
-				<li><a href="">Facebook</a></li>
+				<li>Social Media Links</li>
+				<li><a href="www.instagram.com">Instagram</a></li>
+				<li><a href="www.facebook.com">Facebook</a></li>
 			</ul>
 		</footer>
 	)

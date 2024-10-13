@@ -1,5 +1,4 @@
 import BookingPage from './BookingPage';
-import NotImpl from './NotImpl';
 import About from './About';
 import ConfirmedBooking from './ConfirmedBooking';
 import HomePage from './HomePage';
@@ -35,17 +34,12 @@ export default function Main() {
 		}
 	};
 
-	const handleReserve = () => {
-		navigate('booking');
-	};
-
 	return (
 		<Routes>
-		    <Route path="/" element={<HomePage onClick={handleReserve}/>}></Route> 
+		    <Route path="/" element={<HomePage />}></Route> 
 			<Route path="/booking" element={<BookingPage times={state} onChange={dispatch} onSubmit={submitForm}/>}></Route>
 			<Route path="/confirmed" element={<ConfirmedBooking />}></Route>
-			<Route path='/about' element={<About />}></Route>
-			<Route path='/notimp' element={<NotImpl />}></Route>
+			<Route path='/about' element={<About />}</Route>
 		</Routes>
 	)
 }

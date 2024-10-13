@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Markazi Text', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,283 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav img{
+	height: 50%;
+	width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #495E57;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 1rem;
+}
+
+footer ul li:first-child {
+  font-weight: bold;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+	color: yellow;
+	font-weight: bold;
+	font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main section:first-child {
+  background-color: #495E57;	
+}
+
+main article h2 {
+	color: white;
+	font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+	grid-column: 1;
+}
+
+main article p {
+	color: white;
+	max-width: 80%;
+	grid-column: 1;
+	font-size: 1.5rem;
+}
+
+
+section button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  grid-column: 1;
+  max-width: 50%;
+  border-radius: 10px;
+  height: 1fr;
+}
+
+section button:hover {
+	background-color: #EE9972
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+section article {
+	width: 70%;
+	padding-left: 20%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+article img {
+  height: 400px;
+  grid-column: 2;
+  border-radius: 10px;
+  justify-self: center;
+  position: absolute;
+  overflow: hidden;
+  padding-left: 30%;
+}
+
+
+
+.specials {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 5%;
+}
+
+.specials button {
+	justify-self: end;
+	width: 20%;
+	grid-row: 4;
+	grid-column: 1;
+}
+
+.specials h2 {
+	grid-column: 1;
+	grid-row: 4;
+	font-size: 4rem;
+	color: black;
+	justify-self: start;
+	padding-left: 10%;
+}
+
+.specials ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	grid-row-start: 5;
+	gap: 10%;
+	align-items: center;
+	padding-left: 10%;
+}
+
+.specials p {
+	font-size: 1.5rem;
+    line-height: 1.2;
+	color: black;
+	text-align: justify;
+}
+
+.card-title {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+}
+
+.card {
+	height: 400px;
+}
+
+.specials li h2 {
+	color: #FBDABB;
+	margin: 0px;
+	font-size: 2rem;
+}
+
+.specials li h1 {
+	text-decoration: none;
+	color: black;
+	margin: 0px;
+	font-size: 2rem;
+}
+
+.specials li section {
+	background-color: #edefee;
+	display: block;
+	border-radius: 10%;
+	max-width: 250px;
+}
+
+.specials img {
+	height: 150px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	border-radius: 20px 20px 0 0;
+}
+
+.booking {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('icons_assets/book.jpeg');
+}
+
+
+.booking form {
+	background-color: white;
+	display: grid;
+	max-width: 20%;
+	gap: 20px;
+	justify-self: center;
+	border-radius: 10%;
+	padding: 5% 5% 5% 5%;
+	margin: 2% 2%;
+}
+
+.booking h1 {
+	grid-column: 2;
+	grid-row: 2;
+	justify-self: center;
+	color: white;
+}
+
+.reserve {
+	color: white;
+	background-color: #495E57;
+}
+
+.reserve:hover {
+	background-color: #495E57;	
+}
+
+.confirmation {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    text-align: center;
+	color: #495E57;
+}
+
+.confirmation img {
+	width: 100%;
+	height: 10%;
+}
+
+.toimp h2 {
+	margin-left: 25%;
+	margin-right: 20%;
+	color: #495E57;
+}
+
+.about {
+	background-color: #495E57;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 0.2fr 0.2fr;
+}
+
+.about h1 {
+	margin: 0px;
+	padding-left: 20%;
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.about h2 {
+	color: white;
+	grid-column: 1;
+	grid-row: 2;
+	margin: 0px;
+	padding-left: 20%;
+	text-align: left;
+	max-width: 70%;
+}
+
+.about img {
+	grid-column: 2;
+	grid-row: 2 / -1;
+	justify-self: start;
+	width: 100%;
 }
