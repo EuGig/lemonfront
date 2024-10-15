@@ -26,6 +26,7 @@ export default function Main() {
 	const initializeTimes = getTimes(today);
 
 	const [state, dispatch] = useReducer(updateTimes, initializeTimes);
+
 	const navigate = useNavigate();
 
 	const submitForm = (formData) => {
@@ -35,17 +36,14 @@ export default function Main() {
 		}
 	};
 
-	const handleReserve = () => {
-		navigate('booking');
-	};
 
 	return (
 		<Routes>
-		    <Route path="/" element={<HomePage onClick={handleReserve}/>}></Route> 
-			<Route path="/booking" element={<BookingPage times={state} onChange={dispatch} onSubmit={submitForm}/>}></Route>
-			<Route path="/confirmed" element={<ConfirmedBooking />}></Route>
-			<Route path='/about' element={<About />}></Route>
-			<Route path='/notimp' element={<NotImpl />}></Route>
+			<Route path="/" element={<HomePage />} /> 
+			<Route path="/booking" element={<BookingPage times={state} onChange={dispatch} onSubmit={submitForm}/>} />
+			<Route path="/confirmed" element={<ConfirmedBooking />} />
+			<Route path='/about' element={<About />} />
+			<Route path='/notimp' element={<NotImpl />} />
 		</Routes>
 	)
 }

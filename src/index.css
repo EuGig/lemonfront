@@ -83,8 +83,9 @@ main article p {
 	font-size: 1.5rem;
 }
 
-
 section button {
+pointer-events: auto;
+  z-index: 1;
   background-color: yellow;
   color: black;
   border: none;
@@ -97,7 +98,8 @@ section button {
 }
 
 section button:hover {
-	background-color: #EE9972
+	background-color: #EE9972;
+	color: white;
 }
 
 section {
@@ -136,7 +138,12 @@ article img {
 	justify-self: end;
 	width: 20%;
 	grid-row: 4;
+	cursor: pointer;
 	grid-column: 1;
+}
+
+.specials button::hover {
+	background-color: #EE9972
 }
 
 .specials h2 {

@@ -4,6 +4,7 @@ import salad from "./../icons_assets/salad.jpg";
 import brusk from "./../icons_assets/bruchetta.svg";
 import pasta from "./../icons_assets/pasta.jpeg";
 import React from "react";
+import {useNavigate} from 'react-router-dom';
 
 function HomePage(props) {
 
@@ -43,6 +44,8 @@ function HomePage(props) {
 			</li>
 		)
 	});
+
+	const navigate = useNavigate();
 	
 	return (
 		<main>
@@ -51,7 +54,7 @@ function HomePage(props) {
 					<h1>Little Lemon</h1>
 					<h2>Chicago</h2>
 					<p>We are a family owned Mediterranean restaurant, focused on trdaitional recipes served with a modern twist.</p>
-					<button onClick={props.onClick}>Reserve a Table</button>
+					<button onClick={() => navigate("/booking")}>Reserve a Table</button>
 				<img src={image} alt="resthome"/>
 				</article>
 			</section>
